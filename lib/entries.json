@@ -1,0 +1,56 @@
+{
+  "entries": [
+    {
+      "title": "Kevin",
+      "body": "He got the part in the movie."
+    },
+    {
+      "title": "Learning Express",
+      "body": "This is where I'm trying to make sure I understand Express and routes."
+    },
+    {
+      "title": "Marriage Boot Camp",
+      "body": "I would love to go again."
+    },
+    {
+      "title": "My New Entry",
+      "body": "This is where I would add my new entry"
+    },
+    {
+      "title": "Sean",
+      "body": "sean is testing her app but at this point her POST routes or more specificly req.body is not being populated."
+    },
+    {
+      "title": "The Transplant",
+      "body": "Another Dr. Show on TV, channel 4."
+    },
+    {
+      "title": "The Transplant",
+      "body": "Another Dr. Show on TV, channel 4."
+    },
+    {
+      "title": "5G",
+      "body": "It's nationwide on Verizon"
+    },
+    {
+      "title": "4G",
+      "body": "It's the past."
+    },
+    {
+      "title": "Express",
+      "body": "Getting on my nerves."
+    },
+    {
+      "title": "Hard Rock Casino",
+      "body": "Go gamble our money away."
+    },
+    {
+      "title": "The Talk",
+      "body": "I like this talk show."
+    },
+    {
+      "title": "Cheryl Boamah",
+      "body": "testing my server"
+    }
+  ]
+}
