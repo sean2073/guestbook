@@ -16,22 +16,32 @@ function addEntry() {
     console.log(entryObject);
     console.log("title: ", title);
     console.log("body: ", body);
-   
-    return $.ajax({
-        url: "/new",
-        data: entryObject,
-        method: "POST",
-      }).then(function(res) {
-          console.log(res)
-        // window.location.replace("/members");
-        alert("Thank you for adding an entry!")
-        // If there's an error, log the error
-      })
-      .catch(function(err) {
-        console.log(err);
-      });
+    // entries.push({
+    //     title: title,
+    //     body: body
+    // });
 
-    
+    fetch('/new', {
+        method: "POST",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(entryObject)
+    })
+        .then(response => {
+            console.log(response);
+            if (response.ok) {
+                // return response.text();
+               return 
+            }
+            alert('Error: ' + response.statusText);
+
+            //   response.redirect('/');
+        })
+        .then(postResponse => {
+            console.log(postResponse);
+            alert("Thanks for adding an entry!");
+        });
 
 };
 

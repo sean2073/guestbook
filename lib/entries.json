@@ -1,56 +1,23 @@
 {
   "entries": [
     {
-      "title": "Kevin",
-      "body": "He got the part in the movie."
+      "title": "X'mas",
+      "body": "No presents again.",
+      "published": ""
     },
     {
       "title": "Learning Express",
-      "body": "This is where I'm trying to make sure I understand Express and routes."
+      "body": "It's challenging but I like it.",
+      "published": ""
     },
     {
-      "title": "Marriage Boot Camp",
-      "body": "I would love to go again."
+      "title": "Testing",
+      "body": "Because I added a new field (published) which a date field."
     },
     {
-      "title": "My New Entry",
-      "body": "This is where I would add my new entry"
-    },
-    {
-      "title": "Sean",
-      "body": "sean is testing her app but at this point her POST routes or more specificly req.body is not being populated."
-    },
-    {
-      "title": "The Transplant",
-      "body": "Another Dr. Show on TV, channel 4."
-    },
-    {
-      "title": "The Transplant",
-      "body": "Another Dr. Show on TV, channel 4."
-    },
-    {
-      "title": "5G",
-      "body": "It's nationwide on Verizon"
-    },
-    {
-      "title": "4G",
-      "body": "It's the past."
-    },
-    {
-      "title": "Express",
-      "body": "Getting on my nerves."
-    },
-    {
-      "title": "Hard Rock Casino",
-      "body": "Go gamble our money away."
-    },
-    {
-      "title": "The Talk",
-      "body": "I like this talk show."
-    },
-    {
-      "title": "Cheryl Boamah",
-      "body": "testing my server"
+      "title": "test",
+      "body": "liar!!",
+      "published": "Tue Nov 17 2020 01:28:08 GMT-0500 (Eastern Standard Time)"
     }
   ]
 }

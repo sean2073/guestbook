@@ -4,6 +4,7 @@ console.log($entryForm);
 
 var title = document.getElementById("title").value;
 var body = document.getElementById("bodyTextarea").value;
+var published = new Date();
 
 // const name = $animalForm.querySelector('[name="animal-name"]').value;
 
@@ -12,7 +13,7 @@ var body = document.getElementById("bodyTextarea").value;
 function addEntry() {
     const title = $entryForm.querySelector('[name="title"]').value;
     const body = $entryForm.querySelector('[name="bodyTextarea"]').value;
-    const entryObject = { title, body };
+    const entryObject = { title, body, published };
     console.log(entryObject);
     console.log("title: ", title);
     console.log("body: ", body);
@@ -21,9 +22,10 @@ function addEntry() {
         url: "/new",
         data: entryObject,
         method: "POST",
-      }).then(function(res) {
+      }).done(function(res, textStatus, xhr) {
           console.log(res)
-        // window.location.replace("/members");
+          console.log("Status Code: " , xhr.status);
+        window.location.replace("/");
         alert("Thank you for adding an entry!")
         // If there's an error, log the error
       })

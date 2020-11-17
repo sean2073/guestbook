@@ -6,7 +6,7 @@ const fs = require('fs');
 var bodyParser = require('body-parser');
 
 // Initialize the app and create a port
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3008;
 const app = express();
 
 const { entries }= require('./lib/entries');
@@ -23,7 +23,7 @@ app.use(express.static("public"));
 app.use(logger("dev"));
 
 
-function createNewAnimal(body, entriesArray) {
+function createNewEntry(body, entriesArray) {
     console.log(body);
     // our function's main code will go here!
     const entry = body;
@@ -38,20 +38,20 @@ function createNewAnimal(body, entriesArray) {
   }
 //routes
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/index.html'));
+  res.sendFile(path.join(__dirname, './public/guessBook.html'));
 });
 
-app.get("/api", function (req, res) {
+// app.get("/api", function (req, res) {
 
-  res.json(entries);
-})
+//   res.json(entries);
+// })
 
 // app.get("/new", function (req, res) {
 
 //     res.json(entries);
 // });
 app.get('/new', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/guessBook.html'));
+  res.json(entries);
 });
 
 app.post('/new', (req, res) => {
@@ -62,15 +62,15 @@ app.post('/new', (req, res) => {
     console.log('query: ', req.query)
     
 
-    if (!req.body.title || !req.body.bodyTextarea) {
+    if (!req.body.title || !req.body.body) {
         res.send("You must add something");
         return;
     }
   
     console.log(entries);
-    const entry = createNewAnimal(newEntry, entries);
+    const entry = createNewEntry(newEntry, entries);
       res.json(entry);
-      res.redirect('/');
+      // res.redirect('/');
 
 })
 
