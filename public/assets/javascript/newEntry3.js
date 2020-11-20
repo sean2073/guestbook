@@ -2,9 +2,8 @@ const $entryForm = document.querySelector('#entry-form');
 console.log($entryForm);
 // const $animalForm = document.querySelector('#animal-form');
 
-var title = document.getElementById("title").value;
-var body = document.getElementById("bodyTextarea").value;
-var published = new Date();
+
+var published = moment().format('llll');
 
 // const name = $animalForm.querySelector('[name="animal-name"]').value;
 

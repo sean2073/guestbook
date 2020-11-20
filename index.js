@@ -1,4 +1,5 @@
 const express = require('express');
+var moment = require('moment'); 
 
 var logger = require('morgan');
 const path = require('path');
@@ -26,7 +27,11 @@ app.use(logger("dev"));
 function createNewEntry(body, entriesArray) {
     console.log(body);
     // our function's main code will go here!
-    const entry = body;
+    const entry ={
+      title: body.title,
+      body: body.body,
+      published: body.published
+    };
     entriesArray.push(entry);
     fs.writeFileSync(
       path.join(__dirname, './lib/entries.json'),
@@ -39,6 +44,9 @@ function createNewEntry(body, entriesArray) {
 //routes
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './public/guessBook.html'));
+});
+app.get('/view', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/view.html'));
 });
 
 // app.get("/api", function (req, res) {
@@ -55,6 +63,7 @@ app.get('/new', (req, res) => {
 });
 
 app.post('/new', (req, res) => {
+    req.body.published = moment().format('llll');
     var newEntry = req.body;
     console.log("I'm in my post route /new ");
     console.log("Body: " , req.body);

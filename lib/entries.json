@@ -18,6 +18,55 @@
       "title": "test",
       "body": "liar!!",
       "published": "Tue Nov 17 2020 01:28:08 GMT-0500 (Eastern Standard Time)"
+    },
+    {
+      "title": "X'mas",
+      "body": "No presents again.",
+      "published": ""
+    },
+    {
+      "title": "New Route",
+      "body": "TEst",
+      "published": "Tue Nov 17 2020 19:45:26 GMT-0500 (Eastern Standard Time)"
+    },
+    {
+      "title": "Sean's Test",
+      "body": "I'm watching the Bachelorette on TV."
+    },
+    {
+      "title": "Sean's Test",
+      "body": "I'm watching the Bachelorette on TV.",
+      "published": "Tue Nov 17 2020 20:52:00 GMT-0500 (Eastern Standard Time)"
+    },
+    {
+      "title": "Sean's Test",
+      "body": "I'm watching the Bachelorette on TV.",
+      "published": "new Date()"
+    },
+    {
+      "title": "What is going on",
+      "body": "God please answer my prayer.",
+      "published": "Tue Nov 17 2020 20:57:37 GMT-0500 (Eastern Standard Time)"
+    },
+    {
+      "title": "Sean Brown",
+      "body": "I am happy that the application is working.  It's great!",
+      "published": "2020-11-19T03:04:57.641Z"
+    },
+    {
+      "title": "Sean Brown",
+      "body": "Making sure the date is formatted the way I want it to be.",
+      "published": "2020-11-19T03:39:07.822Z"
+    },
+    {
+      "title": "Sean",
+      "body": "Testing",
+      "published": "2020-11-19T03:42:13.492Z"
+    },
+    {
+      "title": "Sean Brown",
+      "body": "TEsting the Date.  Need it to be correct.",
+      "published": "Wed, Nov 18, 2020 10:45 PM"
     }
   ]
 }
